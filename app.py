@@ -20,10 +20,29 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .title { text-align: center; font-size: 2.2em; font-weight: 800; color: #4CAF50; }
-    .subtitle { text-align: center; font-size: 1.05em; color: #555; }
-    .tip-box { background-color: #e8f5e9; padding: 10px 15px; border-left: 5px solid #4CAF50; border-radius: 8px; color: #2e7d32; }
-    .cmd-box { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; background: #0b1021; color: #e8e8e8; padding: 8px 10px; border-radius: 6px; }
+    :root {
+      --primary: #0066cc;
+      --primary-dark: #005bb5;
+      --bg-soft: #eaf3fb;
+      --text-subtle: #4a5568;
+    }
+    .title { text-align: center; font-size: 2.2em; font-weight: 800; color: var(--primary); }
+    .subtitle { text-align: center; font-size: 1.05em; color: var(--text-subtle); }
+    .tip-box { background-color: var(--bg-soft); padding: 10px 15px; border-left: 5px solid var(--primary); border-radius: 8px; color: #1f3b57; }
+
+    /* Buttons */
+    .stButton>button { background: var(--primary) !important; color: #ffffff !important; padding: 10px 18px; font-size: 16px; border-radius: 8px; border: none; font-weight: 600; }
+    .stButton>button:hover { background: var(--primary-dark) !important; }
+
+    /* Sidebar */
+    [data-testid="stSidebar"] { background: linear-gradient(180deg, #ffffff 0%, #f4f8fc 100%); }
+
+    /* Inputs accent */
+    input[type="checkbox"], input[type="radio"] { accent-color: var(--primary); }
+    div[role="slider"] { color: var(--primary); }
+
+    /* Layout tweaks */
+    .block-container { padding-top: 2rem; }
     </style>
     """,
     unsafe_allow_html=True,
