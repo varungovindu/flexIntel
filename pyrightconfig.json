@@ -1,0 +1,18 @@
+{
+	"venvPath": ".",
+	"venv": "venv",
+	"pythonVersion": "3.10",
+	"typeCheckingMode": "basic",
+	"reportMissingImports": false,
+	"reportAttributeAccessIssue": "warning",
+	"reportOptionalMemberAccess": "warning",
+	"executionEnvironments": [
+		{
+			"root": ".",
+			"extraPaths": [
+				"./venv/Lib/site-packages"
+			]
+		}
+	]
+}
+
