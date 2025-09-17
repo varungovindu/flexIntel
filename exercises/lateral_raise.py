@@ -528,3 +528,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     args.input = parse_input_source(args.input)
     run_app(args)
+
+cap.release()
+cv2.destroyAllWindows()

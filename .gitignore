@@ -1,4 +1,23 @@
-venv/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+env/
+.venv/
+
+# Node.js
+node_modules/
+build/
+dist/
+
+# Large files
+*.mp4
+*.avi
+*.h5
+*.pt
+*.onnx
+*.weights
+
+# OS
 .DS_Store
+Thumbs.db
