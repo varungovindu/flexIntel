@@ -1,23 +1,57 @@
+# =================
 # Python
+# =================
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
+*.so
+*.dll
+*.dylib
+
+# Virtual environments
 env/
 .venv/
+venv/
 
-# Node.js
+# Jupyter & cache
+.ipynb_checkpoints
+.pytest_cache/
+__pycache__/
+
+# =================
+# Node.js / React
+# =================
 node_modules/
 build/
 dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Large files
-*.mp4
-*.avi
+# =================
+# Machine Learning & Large files
+# =================
 *.h5
 *.pt
+*.pth
 *.onnx
+*.pb
+*.tflite
+*.ckpt
 *.weights
+*.npy
+*.npz
+*.zip
+*.tar.gz
+dataset/
 
-# OS
+# =================
+# OS / Editor files
+# =================
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
